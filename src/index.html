@@ -36,9 +36,14 @@
 
     <script type="text/javascript" src="assets/vendor/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="assets/vendor/polymer/polymer.html">
-    <link rel="import" href="assets/components/btn.html">
+    <link rel="import" href="assets/components/btn/btn.html">
+    <link rel="import" href="assets/components/imgContainer/imgContainer.html">
 </head>
 <body>
-    <a-btn></a-btn>
+    <div class="wrapper">
+        <container-imgwrap imgsrc="//placehold.it/100x100">
+            <content-btn></content-btn>
+        </container-imgwrap>
+    </div>
 </body>
 </html>

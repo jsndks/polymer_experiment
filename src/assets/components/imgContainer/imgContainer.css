@@ -1,0 +1,10 @@
+/* ---------------------------------------------------------------------
+Image Container Component
+------------------------------------------------------------------------ */
+:host {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-image: url({{imgsrc}});
+    background-size: cover;
+}

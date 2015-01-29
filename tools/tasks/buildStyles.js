@@ -23,6 +23,14 @@ module.exports = function(grunt) {
                     dest: '<%= env.DIR_DEST %>',
                     src: ['assets/{styles,vendor}/**/*.css']
                 }]
+            },
+            buildComponents: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= env.DIR_SRC %>',
+                    dest: '<%= env.DIR_DEST %>',
+                    src: ['assets/components/**/*.css']
+                }]
             }
         },
 
@@ -53,7 +61,8 @@ module.exports = function(grunt) {
                 'cssmin:generated',
             ]
             : [
-                'copy:buildStyles'
+                'copy:buildStyles',
+                'copy:buildComponents'
             ]
     );
 };
