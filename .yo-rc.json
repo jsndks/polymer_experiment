@@ -1,0 +1,17 @@
+{
+  "generator-nerdery": {
+    "title": "polymer",
+    "name": "polymer",
+    "description": "polymer project",
+    "version": "1.0.0",
+    "markup": "MarkupVanilla",
+    "markupVanillaFeatures": [
+      "icons",
+      "seo"
+    ],
+    "styles": "StylesVanilla",
+    "scripts": "ScriptsVanilla",
+    "scriptsVanillaNamespace": "NRD",
+    "framework": "FrameworkVanilla"
+  }
+}
