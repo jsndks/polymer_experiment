@@ -1,0 +1,19 @@
+/* ---------------------------------------------------------------------
+Feature Component
+------------------------------------------------------------------------ */
+:host:before,
+:host:after {
+    content: '';
+    display: table;
+}
+
+:host:after {
+    clear: both;
+}
+
+.figure {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+/*.body {}*/

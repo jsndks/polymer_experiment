@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------------------
+Media Container Component
+------------------------------------------------------------------------ */
+:host {
+    display: block;
+}
+
+:host:before,
+:host:after {
+    content: '';
+    display: table;
+}
+
+:host:after {
+    clear: both;
+}
+
+.figure {
+    float: left;
+    margin-right: 12px;
+}
+
+.body {
+    overflow: hidden;
+}

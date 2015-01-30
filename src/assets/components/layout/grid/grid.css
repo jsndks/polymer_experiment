@@ -1,0 +1,23 @@
+/* ---------------------------------------------------------------------
+Grid Component
+------------------------------------------------------------------------ */
+:host {
+    display: block;
+}
+
+:host:before,
+:host:after {
+    content: '';
+    display: table;
+}
+
+:host:after {
+    clear: both;
+}
+
+::content > * {
+    width: 50%;
+    float: left;
+    padding: 0 4%;
+    box-sizing: border-box;
+}

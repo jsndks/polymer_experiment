@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '<%= env.DIR_SRC %>',
                     dest: '<%= env.DIR_DEST %>',
-                    src: ['assets/components/**/*.css']
+                    src: ['assets/components/**/**/*.css']
                 }]
             }
         },

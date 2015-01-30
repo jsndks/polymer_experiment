@@ -1,0 +1,13 @@
+/* ---------------------------------------------------------------------
+Image Container Component
+------------------------------------------------------------------------ */
+:host {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    background-image: url('//placehold.it/600x600');
+    background-size: cover;
+    background-position: 50%;
+}

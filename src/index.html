@@ -34,16 +34,150 @@
     <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
     <!-- endbuild -->
 
+    <!-- SCRIPTS -->
     <script type="text/javascript" src="assets/vendor/webcomponentsjs/webcomponents.min.js"></script>
+
+    <!-- COMPONENTS -->
     <link rel="import" href="assets/vendor/polymer/polymer.html">
-    <link rel="import" href="assets/components/btn/btn.html">
-    <link rel="import" href="assets/components/imgContainer/imgContainer.html">
+    <link rel="import" href="assets/components/layout/shelf/shelf.html">
+    <link rel="import" href="assets/components/layout/grid/grid.html">
+    <link rel="import" href="assets/components/container/box/box.html">
+    <link rel="import" href="assets/components/container/feature/feature.html">
+    <link rel="import" href="assets/components/container/media/media.html">
+    <link rel="import" href="assets/components/container/imgwrapper/imgwrapper.html">
+    <link rel="import" href="assets/components/content/button/button.html">
 </head>
-<body>
+<body unresolved>
     <div class="wrapper">
-        <container-imgwrap imgsrc="//placehold.it/100x100">
-            <content-btn>button text</content-btn>
-        </container-imgwrap>
+        <lyt-shelf>
+            <ctr-imgwrapper imgsrc="//placehold.it/100x100">
+                <cnt-button></cnt-button>
+            </ctr-imgwrapper>
+        </lyt-shelf>
+
+        <lyt-shelf>
+            <ctr-box>
+                <p>this is box content</p>
+            </ctr-box>
+        </lyt-shelf>
+
+        <lyt-shelf>
+            <ctr-box>
+                <ctr-media mediasrc="//placehold.it/100x100">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Animi tempora provident, sequi perferendis quo rem odit
+                        ullam numquam pariatur eos?
+                    </p>
+                </ctr-media>
+            </ctr-box>
+        </lyt-shelf>
+
+        <lyt-shelf>
+            <ctr-box>
+                <ctr-feature mediasrc="//placehold.it/300x50">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Animi tempora provident, sequi perferendis quo rem odit
+                        ullam numquam pariatur eos?
+                    </p>
+                </ctr-feature>
+            </ctr-box>
+        </lyt-shelf>
+
+        <lyt-shelf>
+            <ctr-box>
+                <lyt-grid>
+                    <div>
+                        <ctr-media mediasrc="//placehold.it/100x100">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Animi tempora provident, sequi perferendis quo rem odit
+                                ullam numquam pariatur eos?
+                            </p>
+                        </ctr-media>
+                    </div>
+                    <div>
+                        <ctr-feature mediasrc="//placehold.it/300x50">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Animi tempora provident, sequi perferendis quo rem odit
+                                ullam numquam pariatur eos?
+                            </p>
+                        </ctr-feature>
+                    </div>
+                </lyt-grid>
+            </ctr-box>
+        </lyt-shelf>
+
+
+
+
+
+
+        <ol class="taskList">
+            <li>
+                layout (lyt)
+                <ol>
+                    <li>grid</li>
+                    <li>shelf</li>
+                </ol>
+            </li>
+            <li>
+                container (ctr)
+                <ol>
+                    <li>box</li>
+                    <li>feature</li>
+                    <li>media</li>
+                    <li>vlist</li>
+                    <li>hlist</li>
+                </ol>
+            </li>
+            <li>
+                content (cnt)
+                <ol>
+                    <li>btn</li>
+                    <li>hdg</li>
+                    <li>link</li>
+                </ol>
+            </li>
+        </ol>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
